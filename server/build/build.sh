@@ -14,6 +14,4 @@ mkdir -p $FIN
 
 node $RJS -o main.build.js && \
   uglifyjs $TMP/main.js -o $FIN/main.js -c -m -r require
-  # uglifyjs $TMP/editor-main.js -o $FIN/editor-main.js -b indent_level=2
-
 rm -r $TMP
